@@ -1,11 +1,18 @@
 
 package dwiecyfrysilni;
+import java.util.Scanner;
 
 public class DwieCyfrySilni {
 
     public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
         Factorial f = new Factorial();
-        int a =3;
+        System.out.println("proszę wpisać liczbę całkowitą");
+        int a = scan.nextInt();
+        while(a<0 || a>30)
+        {
+            a = scan.nextInt();
+        }
          Foo foo=new Foo();
          foo.silnia = f.factorial(a);
          System.out.println(foo.silnia);
