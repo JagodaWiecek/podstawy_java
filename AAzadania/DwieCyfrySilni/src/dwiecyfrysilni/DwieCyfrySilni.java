@@ -18,7 +18,7 @@ public class DwieCyfrySilni {
          System.out.println(foo.silnia);
          f.iled(foo); // ile dziesiątek
          f.ilej(foo); // ile jedynek
-         System.out.println(foo.dziesiec+"  "+foo.jeden);
+         System.out.println(foo.dziesiec+" "+foo.jeden);
     }
     
 }

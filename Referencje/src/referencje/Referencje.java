@@ -21,7 +21,11 @@ public class Referencje {
         Foo foo = new Foo();
         x.change(foo);
         System.out.println(foo.y);
-        
+         // Porównywanie Stringów
+         String imie = new String("Jagoda");
+         String imie2 = new String("Jagoda");
+         if (imie.equals(imie2))
+             System.out.println(imie);
         
     }
     
