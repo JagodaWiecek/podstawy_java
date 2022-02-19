@@ -23,8 +23,8 @@ public class Referencje {
         System.out.println(foo.y);
          // Porównywanie Stringów
          String imie = new String("Jagoda");
-         String imie2 = new String("Jagoda");
-         if (imie.equals(imie2))
+         String imie2 = new String("Jagoda"); //Bo string jest optymalizowany, referencyjny
+         if (imie.equals(imie2)) // (imie==imie2) to poównanie adresów
              System.out.println(imie);
         
     }
