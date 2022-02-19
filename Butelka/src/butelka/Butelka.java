@@ -33,7 +33,7 @@ public class Butelka {
         return true;
         
     }
-    void przelej(double ilosc,double ograniczenie, Butelka gdziePrzelac)
+    void przelej(double ilosc , Butelka gdziePrzelac,double ograniczenie)
     {
         if(this.wylej(ilosc))
             gdziePrzelac.wlej(ilosc,ograniczenie);
@@ -52,7 +52,7 @@ public class Butelka {
             System.out.println(butelka[i].getIleLItrow());
         }
         System.out.println(separator);
-        butelka[0].przelej(1,9,butelka[3]);
+        butelka[0].przelej(1,butelka[3],9);
         System.out.println(butelka[0].getIleLItrow()+"\n"+butelka[3].ileLitrow);
         
     }
