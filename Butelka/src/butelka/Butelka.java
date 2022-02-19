@@ -4,23 +4,29 @@ package butelka;
 public class Butelka {
 
     private double ileLitrow;
+    private double ograniczenie;
     
     Butelka()
     {
     }
-    Butelka(double ileLitrow)
+    Butelka(double ileLitrow,double ograniczenie)
     {
         this.ileLitrow=ileLitrow;
+        this.ograniczenie=ograniczenie;
     }
     double getIleLItrow()
     {
         return ileLitrow;
     }
-    void wlej(double ilosc,double ograniczenie)
+    double getOgraniczenie()
+    {
+        return ograniczenie;
+    }
+    void wlej(double ilosc)
     {
         this.ileLitrow+=ilosc;
-        if(this.ileLitrow>ograniczenie)
-            this.ileLitrow=ograniczenie;
+        if(this.ileLitrow>this.ograniczenie)
+            this.ileLitrow=this.ograniczenie;
             
     }
     boolean wylej(double ilosc)
@@ -33,10 +39,10 @@ public class Butelka {
         return true;
         
     }
-    void przelej(double ilosc , Butelka gdziePrzelac,double ograniczenie)
+    void przelej(double ilosc , Butelka gdziePrzelac)
     {
         if(this.wylej(ilosc))
-            gdziePrzelac.wlej(ilosc,ograniczenie);
+            gdziePrzelac.wlej(ilosc);
         else 
             System.out.println("za mało wody w butelce");
     }
@@ -48,11 +54,11 @@ public class Butelka {
         
         for(int i=0;i<butelka.length;i++)
         {
-            butelka[i]=new Butelka(5);
+            butelka[i]=new Butelka(5,10);
             System.out.println(butelka[i].getIleLItrow());
         }
         System.out.println(separator);
-        butelka[0].przelej(1,butelka[3],9);
+        butelka[0].przelej(1,butelka[3]);
         System.out.println(butelka[0].getIleLItrow()+"\n"+butelka[3].ileLitrow);
         
     }
