@@ -26,4 +26,9 @@ public class Szkielet extends Potwor
         this.TypBroni=TypBroni;
         System.out.println("NieDomyślny konstruktor z klasy Szkielet");
     }
+    @Override
+    protected void opis()
+    {
+        
+    }
 }

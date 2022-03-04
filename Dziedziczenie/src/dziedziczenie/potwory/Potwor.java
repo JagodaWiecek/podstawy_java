@@ -1,7 +1,7 @@
 
 package dziedziczenie.potwory;
 
-public class Potwor {
+public abstract class Potwor { //nie da się zrobić Potwor p = new Potwor();
     
     protected double predkoscChodzenia=10;
     protected double zywotnosc;
@@ -22,4 +22,5 @@ public class Potwor {
         this.zywotnosc=zywotnosc;
         System.out.println("NieDomyślny konstruktor z klasy Potwor");
     }
+    abstract protected void opis(); 
 }

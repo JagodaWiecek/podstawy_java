@@ -8,13 +8,15 @@ import dziedziczenie.potwory.Zombie;
 public class Dziedziczenie {
 
     public static void main(String[] args) {
-        Potwor p = new Szkielet(20,50);
+        Potwor s = new Szkielet(20,50);
        /* Szkielet s = new Szkielet(20,50,"Łuk");
         Zombie z = new Zombie(5,30);
         s.atakuj();*/
-       p.atakuj();
-       Potwor z = new Zombie();
+       s.atakuj();
+       Potwor z = new Zombie(10,6);
        
+       Potwor p = new Pajak();
+       p.atakuj();
         
         
     }

@@ -16,6 +16,12 @@ public class Zombie extends Potwor
     public Zombie(double predkoscChodzenia,double zywotnosc)
     {
         super(predkoscChodzenia,zywotnosc);
+        System.out.println("Szybkość "+predkoscChodzenia+"\nHp "+zywotnosc);
         System.out.println("NieDomyślny konstruktor z klasy Zombie");
+    }
+    @Override
+     protected void opis()
+    {
+        
     }
 }
