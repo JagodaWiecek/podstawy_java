@@ -1,15 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package dziedziczenie.potwory;
 
-/**
- *
- * @author jwiec
- */
 public class Zombie extends Potwor
 {
+    @Override
+    public void atakuj()
+    {
+        super.atakuj();
+        System.out.println("Metoda ataku z klasy Zombie");
+    }
     public Zombie()
     {
         System.out.println("Domyślny konstruktor z klasy Zombie");

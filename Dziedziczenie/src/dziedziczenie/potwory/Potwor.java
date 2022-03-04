@@ -1,17 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package dziedziczenie.potwory;
 
-/**
- *
- * @author jwiec
- */
 public class Potwor {
     
-    public double predkoscChodzenia=10;
-    public double zywotnosc;
+    protected double predkoscChodzenia=10;
+    protected double zywotnosc;
     
     public void atakuj()
     {
